@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONTACTO</title>
+    <link rel="icon" href="../img/logo.png" />
+    <!--fONT AWSOME-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--GOOGLE FONT (OSWALD)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <!--CSS-->
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <button class="menu-btn">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="container">
+      <nav class="nav-main">
+        <a href="../index.html">
+          <img
+            src="../img/logo.png"
+            alt="Site LOGO"
+            class="nav-brand"
+            href="../index.html"
+          />
+        </a>
+        <ul class="nav-menu">
+          <li>
+            <a href="../index.html"> <i class="fas fa-home"></i> INICIO </a>
+          </li>
+          <li>
+            <a href="servicios.html">SERVICIOS</a>
+          </li>
+          <li>
+            <a href="#">CURSOS</a>
+          </li>
+          <li>
+            <a href="#">CLIENTES</a>
+          </li>
+          <li>
+            <a href="#">CONOCENOS</a>
+          </li>
+        </ul>
+      </nav>
+      <hr />
+    </div>
+    <form
+      action="https://formsubmit.co/chamexdan@gmail.com"
+      method="POST"
+      class="formulario"
+      id="formulario"
+    >
+      <!-- Grupo: Nombre -->
+      <div class="formulario__grupo" id="grupo__nombre">
+        <label for="nombre" class="formulario__label">Nombre</label>
+        <div class="formulario__grupo-input">
+          <input
+            type="text"
+            class="formulario__input"
+            name="nombre"
+            id="nombre"
+            placeholder="John Doe"
+          />
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario__input-error">
+          El nombre tiene que ser de 4 a 16 dígitos y solo puede contener
+          numeros, letras y guion bajo.
+        </p>
+      </div>
+
+      <!-- Grupo: Correo Electronico -->
+      <div class="formulario__grupo" id="grupo__correo">
+        <label for="correo" class="formulario__label">Correo Electrónico</label>
+        <div class="formulario__grupo-input">
+          <input
+            type="email"
+            class="formulario__input"
+            name="correo"
+            id="correo"
+            placeholder="correo@correo.com"
+          />
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario__input-error">
+          El correo solo puede contener letras, numeros, puntos, guiones y guion
+          bajo.
+        </p>
+      </div>
+
+      <!-- Grupo: Teléfono -->
+      <div class="formulario__grupo" id="grupo__telefono">
+        <label for="telefono" class="formulario__label">Teléfono</label>
+        <div class="formulario__grupo-input">
+          <input
+            type="text"
+            class="formulario__input"
+            name="telefono"
+            id="telefono"
+            placeholder="76767676"
+          />
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario__input-error">
+          El telefono debe contener de 7 a 14 dígitos.
+        </p>
+      </div>
+
+      <!-- Grupo: Motivo -->
+      <div class="formulario__grupo" id="grupo__motivo">
+        <label for="motivo" class="formulario__label">Motivo</label>
+        <div class="formulario__grupo-input">
+          <input
+            type="text"
+            class="formulario__input"
+            name="motivo"
+            id="motivo"
+            placeholder="Consulta"
+          />
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario__input-error">
+          El motivo tiene que ser de 4 a 40 dígitos y solo puede contener
+          numeros, letras y guion bajo.
+        </p>
+      </div>
+
+      <!-- Grupo: Comentario -->
+      <div class="formulario__grupo" id="grupo__comentario">
+        <label for="comentario" class="formulario__label">Comentario</label>
+        <div class="formulario__grupo-input">
+          <textarea
+            type="text"
+            class="formulario__input_text"
+            name="comentario"
+            id="comentario"
+            cols="30"
+            rows="10"
+            placeholder="..."
+            required
+          ></textarea>
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+      </div>
+
+      <!-- Grupo: Terminos y Condiciones -->
+
+      <div class="formulario__grupo" id="grupo__terminos">
+        <label class="formulario__label">
+          <input
+            class="formulario__checkbox"
+            type="checkbox"
+            name="terminos"
+            id="terminos"
+          />
+          Acepto los Terminos y Condiciones
+        </label>
+      </div>
+      <div>
+        <label class="terminoscondiciones">
+          <a href="t&c.html">Leer Terminos y Condiciones</a>
+        </label>
+      </div>
+
+      <div class="formulario__mensaje" id="formulario__mensaje">
+        <p>
+          <i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor
+          rellena el formulario correctamente.
+        </p>
+      </div>
+
+      <div class="formulario__grupo formulario__grupo-btn-enviar">
+        <button type="submit" class="formulario__btn">Enviar</button>
+        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">
+          Formulario enviado exitosamente!
+        </p>
+      </div>
+    </form>
+
+    <script src="../main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/0414d7c0cb.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
